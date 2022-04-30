@@ -6,7 +6,7 @@
         android:id="@+id/nav_home"
         android:icon="@drawable/icon_home"
         android:title="Home"
-        app:cnb_iconColor="#701E1E"/>
+        app:cnb_iconColor="#E91E63"/>
 
     <item
         android:id="@+id/nav_person"
@@ -18,7 +18,7 @@
         android:id="@+id/nav_home1"
         android:icon="@drawable/ic_launcher_foreground"
         android:title="Home1"
-        app:cnb_iconColor="#FFEB3B"/>
+        app:cnb_iconColor="#673AB7"/>
 
     <item
         android:id="@+id/nav_settings"
