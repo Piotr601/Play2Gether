@@ -40,7 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="190dp"
         android:layout_below="@+id/start_name"
-        android:src="@drawable/tymczasowelogo" />
+        android:src="@drawable/temporarylogo" />
 
     <RelativeLayout
         android:layout_width="match_parent"
