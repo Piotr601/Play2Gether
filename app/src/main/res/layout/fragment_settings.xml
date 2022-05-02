@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FF9800"
+    android:background="#FFFFFF"
     tools:context=".SettingsFragment">
 
     <ScrollView
@@ -16,11 +16,16 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@drawable/settings_gradient" />
+
             <com.mikhaellopez.circularimageview.CircularImageView
                 android:layout_width="170dp"
                 android:layout_height="170dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="-85dp"
                 android:src="@drawable/settinglogo"
                 app:civ_border_color="@color/black"
                 app:civ_border_width="2dp"
@@ -42,21 +47,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/settings_rounded"
                 android:paddingStart="20dp"
+                android:paddingEnd="20dp"
                 android:text="Edit Profile"
                 android:textAllCaps="false"
-                android:textColor="#000000"
-                android:paddingEnd="20dp" />
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
 
             <LinearLayout
-                android:background="@drawable/settings_rounded1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
-                android:layout_marginTop="40dp"
+                android:background="@drawable/settings_rounded1"
                 android:orientation="vertical"
                 android:padding="15dp">
 
@@ -69,25 +75,27 @@
                         android:id="@+id/settingsicon1"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
+                        android:background="@drawable/settings_rounded11"
                         android:padding="12dp"
                         android:src="@drawable/logo" />
 
                     <TextView
-                        android:layout_marginStart="20dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/settingsicon1"
                         android:text="tekst numer 1"
                         android:textColor="#ffffff"
-                        android:textStyle="bold"
-                        android:layout_toEndOf="@+id/settingsicon1" />
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        app:switchMinWidth="50dp"/>
+                        app:switchMinWidth="50dp" />
 
 
                 </RelativeLayout>
@@ -101,25 +109,27 @@
                         android:id="@+id/settingsicon2"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:src="@drawable/logo"
-                        android:padding="12dp" />
+                        android:background="@drawable/settings_rounded2"
+                        android:padding="12dp"
+                        android:src="@drawable/logo" />
 
                     <TextView
-                        android:layout_marginStart="20dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/settingsicon2"
                         android:text="tekst numer 1"
                         android:textColor="#ffffff"
-                        android:textStyle="bold"
-                        android:layout_toEndOf="@+id/settingsicon2" />
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        app:switchMinWidth="50dp"/>
+                        app:switchMinWidth="50dp" />
 
 
                 </RelativeLayout>
@@ -133,25 +143,27 @@
                         android:id="@+id/settingsicon3"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:src="@drawable/logo"
-                        android:padding="12dp" />
+                        android:background="@drawable/settings_rounded3"
+                        android:padding="12dp"
+                        android:src="@drawable/logo" />
 
                     <TextView
-                        android:layout_marginStart="20dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/settingsicon3"
                         android:text="tekst numer 1"
                         android:textColor="#ffffff"
-                        android:textStyle="bold"
-                        android:layout_toEndOf="@+id/settingsicon3" />
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        app:switchMinWidth="50dp"/>
+                        app:switchMinWidth="50dp" />
 
 
                 </RelativeLayout>
@@ -159,12 +171,12 @@
             </LinearLayout>
 
             <LinearLayout
-                android:background="@drawable/settings_rounded1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
                 android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/settings_rounded1"
                 android:orientation="vertical"
                 android:padding="15dp">
 
@@ -177,18 +189,20 @@
                         android:id="@+id/settingsicon4"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:src="@drawable/logo"
-                        android:padding="12dp" />
+                        android:background="@drawable/settings_rounded4"
+                        android:padding="12dp"
+                        android:src="@drawable/logo" />
 
                     <TextView
-                        android:layout_marginStart="20dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/settingsicon4"
                         android:text="tekst numer 1"
                         android:textColor="#ffffff"
-                        android:textStyle="bold"
-                        android:layout_toEndOf="@+id/settingsicon4" />
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -203,24 +217,27 @@
                 <!-- Second icon -->
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp">
 
                     <ImageView
                         android:id="@+id/settingsicon5"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:src="@drawable/logo"
-                        android:padding="12dp" />
+                        android:background="@drawable/settings_rounded5"
+                        android:padding="12dp"
+                        android:src="@drawable/logo" />
 
                     <TextView
-                        android:layout_marginStart="20dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/settingsicon5"
                         android:text="tekst numer 1"
                         android:textColor="#ffffff"
-                        android:textStyle="bold"
-                        android:layout_toEndOf="@+id/settingsicon5" />
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -235,24 +252,27 @@
                 <!-- Third icon -->
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp">
 
                     <ImageView
                         android:id="@+id/settingsicon6"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:src="@drawable/logo"
-                        android:padding="12dp" />
+                        android:background="@drawable/settings_rounded6"
+                        android:padding="12dp"
+                        android:src="@drawable/logo" />
 
                     <TextView
-                        android:layout_marginStart="20dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/settingsicon6"
                         android:text="tekst numer 1"
                         android:textColor="#ffffff"
-                        android:textStyle="bold"
-                        android:layout_toEndOf="@+id/settingsicon6" />
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -267,36 +287,39 @@
             </LinearLayout>
 
             <LinearLayout
-                android:background="@drawable/settings_rounded1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
                 android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/settings_rounded1"
                 android:orientation="vertical"
                 android:padding="15dp">
 
                 <!-- First icon -->
                 <RelativeLayout
                     android:layout_width="match_parent"
+
                     android:layout_height="wrap_content">
 
                     <ImageView
                         android:id="@+id/settingsicon7"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:src="@drawable/logo"
-                        android:padding="12dp" />
+                        android:background="@drawable/settings_rounded7"
+                        android:padding="12dp"
+                        android:src="@drawable/logo" />
 
                     <TextView
-                        android:layout_marginStart="20dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/settingsicon7"
                         android:text="tekst numer 1"
                         android:textColor="#ffffff"
-                        android:textStyle="bold"
-                        android:layout_toEndOf="@+id/settingsicon7" />
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -311,24 +334,27 @@
                 <!-- Second icon -->
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp">
 
                     <ImageView
                         android:id="@+id/settingsicon8"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:src="@drawable/logo"
-                        android:padding="12dp" />
+                        android:background="@drawable/settings_rounded8"
+                        android:padding="12dp"
+                        android:src="@drawable/logo" />
 
                     <TextView
-                        android:layout_marginStart="20dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/settingsicon8"
                         android:text="tekst numer 1"
                         android:textColor="#ffffff"
-                        android:textStyle="bold"
-                        android:layout_toEndOf="@+id/settingsicon8" />
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -343,24 +369,27 @@
                 <!-- Third icon -->
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp">
 
                     <ImageView
                         android:id="@+id/settingsicon9"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:src="@drawable/logo"
-                        android:padding="12dp" />
+                        android:background="@drawable/settings_rounded9"
+                        android:padding="12dp"
+                        android:src="@drawable/logo" />
 
                     <TextView
-                        android:layout_marginStart="20dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/settingsicon9"
                         android:text="tekst numer 1"
                         android:textColor="#ffffff"
-                        android:textStyle="bold"
-                        android:layout_toEndOf="@+id/settingsicon9" />
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -375,12 +404,12 @@
             </LinearLayout>
 
             <LinearLayout
-                android:background="@drawable/settings_rounded1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
                 android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/settings_rounded1"
                 android:orientation="vertical"
                 android:padding="15dp">
 
@@ -392,18 +421,20 @@
                         android:id="@+id/settingsicon10"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:src="@drawable/logo"
-                        android:padding="12dp" />
+                        android:background="@drawable/settings_rounded10"
+                        android:padding="12dp"
+                        android:src="@drawable/logo" />
 
                     <TextView
-                        android:layout_marginStart="20dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/settingsicon10"
                         android:text="tekst numer 1"
                         android:textColor="#ffffff"
-                        android:textStyle="bold"
-                        android:layout_toEndOf="@+id/settingsicon10" />
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -419,8 +450,7 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="70dp">
-            </RelativeLayout>
+                android:layout_height="70dp" />
 
 
         </LinearLayout>
