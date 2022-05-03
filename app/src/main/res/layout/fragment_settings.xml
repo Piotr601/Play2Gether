@@ -209,7 +209,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/settings_right_arrow" />
+                        android:src="@drawable/settings_right_arrow_white" />
 
 
                 </RelativeLayout>
@@ -244,7 +244,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/settings_right_arrow" />
+                        android:src="@drawable/settings_right_arrow_white" />
 
 
                 </RelativeLayout>
@@ -279,7 +279,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/settings_right_arrow" />
+                        android:src="@drawable/settings_right_arrow_white" />
 
 
                 </RelativeLayout>
@@ -326,7 +326,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/settings_right_arrow" />
+                        android:src="@drawable/settings_right_arrow_white" />
 
 
                 </RelativeLayout>
@@ -361,7 +361,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/settings_right_arrow" />
+                        android:src="@drawable/settings_right_arrow_white" />
 
 
                 </RelativeLayout>
@@ -396,7 +396,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/settings_right_arrow" />
+                        android:src="@drawable/settings_right_arrow_white" />
 
 
                 </RelativeLayout>
@@ -441,7 +441,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/settings_right_arrow" />
+                        android:src="@drawable/settings_right_arrow_white" />
 
 
                 </RelativeLayout>
