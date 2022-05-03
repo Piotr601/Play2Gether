@@ -3,6 +3,7 @@ package com.example.play2gether;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -13,6 +14,7 @@ import android.widget.Toast;
 import com.google.android.material.chip.Chip;
 import com.ismaeldivita.chipnavigation.ChipNavigationBar;
 
+import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 public class MainActivity extends AppCompatActivity implements ChipNavigationBar.OnItemSelectedListener {
@@ -23,10 +25,11 @@ public class MainActivity extends AppCompatActivity implements ChipNavigationBar
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        // No bar on top
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
-        getSupportActionBar().hide();
+        Objects.requireNonNull(getSupportActionBar()).hide();
 
         loadFragment(new StartFragment());
 
@@ -54,6 +57,7 @@ public class MainActivity extends AppCompatActivity implements ChipNavigationBar
         return true;
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public void onItemSelected(int i) {
 
@@ -70,10 +74,9 @@ public class MainActivity extends AppCompatActivity implements ChipNavigationBar
                 fragment = new MapFragment();
                 break;
             case R.id.nav_settings:
-                fragment= new SettingsFragment();
+                fragment = new SettingsFragment();
                 break;
         }
-
         loadFragment(fragment);
     }
 }
