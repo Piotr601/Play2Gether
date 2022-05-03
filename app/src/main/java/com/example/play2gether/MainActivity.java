@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements ChipNavigationBar
                 fragment = new HomeFragment();
                 break;
             case R.id.nav_person:
-                fragment= new Fragment();
+                fragment = new PersonFragment();
                 break;
             case R.id.nav_home1:
                 fragment = new MapFragment();
