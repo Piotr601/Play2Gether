@@ -34,7 +34,7 @@ public class HomeFragment extends Fragment{
         avatar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                loadFragment(view);
+                // loadFragment(view);
             }
         });
         return view;
