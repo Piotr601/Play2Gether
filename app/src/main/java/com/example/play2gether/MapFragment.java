@@ -1,7 +1,9 @@
 package com.example.play2gether;
 
+import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
+import android.location.LocationManager;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -23,11 +25,6 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MapFragment extends Fragment {
 
-
-    private final LatLng COURT = new LatLng(51.085484, 17.021309);
-
-    private Marker markerCourt;
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -37,27 +34,36 @@ public class MapFragment extends Fragment {
         SupportMapFragment supportMapFragment = (SupportMapFragment) getChildFragmentManager()
                 .findFragmentById(R.id.google_map);
 
-
         supportMapFragment.getMapAsync(new OnMapReadyCallback() {
             @Override
             public void onMapReady(@NonNull GoogleMap googleMap) {
-                // when map is loaded
-                MarkerOptions markerDef = new MarkerOptions();
+                // WHEN MAP IS LOADED
+
                 // Default point on camera
+                // Declaring point - default point (to change)
+                // Moves camera to coordinates
+                // Animates camera to coordinates
+                MarkerOptions markerDef = new MarkerOptions();
                 CameraUpdate point = CameraUpdateFactory.newLatLngZoom(new LatLng(51.103947, 17.034383),13);
-                // moves camera to coordinates
                 googleMap.moveCamera(point);
-                // animates camera to coordinates
                 googleMap.animateCamera(point);
 
+                // TODO: CREATE A FUNCTION TO READING A CURRENT USER LOCATION
+                // TODO: AND SHOWING ON MAP, DEPENDS ON WHERE USER IS THERE ARE A MARKER ON USER ACTUAL POSITION
+                // To implement current location
+                //LocationManager locationManager = (LocationManager) getActivity().getSystemService(Context.LOCATION_SERVICE);
+
                 // CLEARING MAP AND RECOVERY
-                mapClearingAndRestorationMarks(googleMap);
+                mapClearing(googleMap);
+                mapRestorationMarks(googleMap);
 
                 googleMap.setOnMapLongClickListener(new GoogleMap.OnMapLongClickListener(){
                     @Override
                     public void onMapLongClick(@NonNull LatLng latLng) {
                         // CLEARING MAP AND RECOVERY
-                        mapClearingAndRestorationMarks(googleMap);
+                        mapClearing(googleMap);
+                        mapRestorationMarks(googleMap);
+
                         googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(
                                 latLng, 13
                         ));
@@ -74,7 +80,8 @@ public class MapFragment extends Fragment {
                         // set title of marker
                         markerOptions.title(latLng.latitude + ":" + latLng.longitude);
                         // CLEARING MAP AND RECOVERY
-                        mapClearingAndRestorationMarks(googleMap);
+                        mapClearing(googleMap);
+                        mapRestorationMarks(googleMap);
                         // animating to zoom the marker
                         googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(
                                 latLng, 15
@@ -83,23 +90,40 @@ public class MapFragment extends Fragment {
                         googleMap.addMarker(markerOptions);
                     }
                 });
-
-
             }
         });
         return view;
     }
 
-    void mapClearingAndRestorationMarks(GoogleMap googleMap){
-        googleMap.clear();
+    private void mapRestorationMarks(GoogleMap googleMap){
+
+        // List of Objects
+        final LatLng COURT  = new LatLng(51.085484, 17.021309);
+        final LatLng COURT1 = new LatLng(51.089322, 17.036011);
+
+        // Markers which will be printed on map
+        Marker markerCourt;
+        Marker markerCourt1;
+
         // FIRST MARK (BLUE)
         markerCourt = googleMap.addMarker(new MarkerOptions()
                 .position(COURT)
-                .title("Boisko")
+                .title("Boisko do piłki nożnej")
                 .snippet("Otwarte 12:00-20:00")
                 .icon(BitmapDescriptorFactory.defaultMarker(210))
         );
-        markerCourt.setTag(0);
+        markerCourt1 = googleMap.addMarker(new MarkerOptions()
+                .position(COURT1)
+                .title("Boisko do koszykówki")
+                .snippet("Otwarte całodobowo")
+                .icon(BitmapDescriptorFactory.defaultMarker(30))
+        );
+
+        // not used for now
+        //markerCourt.setTag(0);
+    }
+    private void mapClearing(GoogleMap googleMap) {
+        googleMap.clear();
     }
 
 }

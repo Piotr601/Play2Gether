@@ -44,8 +44,7 @@ public class MainActivity extends AppCompatActivity implements ChipNavigationBar
                     .replace(R.id.fragment_container,fragment)
                     .commit();
         }
-        else
-        {
+        else {
             Toast.makeText(this, "Fragment error", Toast.LENGTH_SHORT).show();
         }
     }
