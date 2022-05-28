@@ -33,8 +33,10 @@
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/drawable/rounded.xml" value="0.133" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/drawable/settings_right_arrow.xml" value="0.1965" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/drawable/start_gradient.xml" value="0.308" />
+        <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/layout/activity_2.xml" value="0.5453125" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/layout/activity_main.xml" value="0.4265625" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/layout/activity_swipe_left_on_person.xml" value="0.37552083333333336" />
+        <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/layout/activity_test.xml" value="0.5453125" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/layout/calendar_view.xml" value="0.37552083333333336" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/layout/fragment_map.xml" value="0.2074468085106383" />
@@ -42,6 +44,8 @@
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/layout/fragment_person_left.xml" value="0.37552083333333336" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/layout/fragment_settings.xml" value="0.33" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/layout/fragment_start.xml" value="0.33" />
+        <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/layout/fragment_start1.xml" value="0.5453125" />
+        <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/layout/fragment_start_new.xml" value="0.67" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/menu/nav_menu.xml" value="0.4265625" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether3/app/src/main/res/layout/activity_main.xml" value="0.55" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether3/app/src/main/res/layout/fragment_home.xml" value="0.3109375" />
