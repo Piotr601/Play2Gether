@@ -6,4 +6,48 @@
     android:layout_height="match_parent"
     tools:context=".testActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Regulamin"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+2. Pellentesque vehicula velit nec elit lobortis, sed interdum elit feugiat.
+3. Donec et dolor quis ipsum tempus laoreet.
+4. Curabitur eget mi sit amet tortor consequat sollicitudin quis nec ligula.
+5. In tincidunt lorem tempor sem vulputate scelerisque.
+6. Sed maximus lectus ac mattis congue.
+7. Quisque eu lorem volutpat, lacinia leo quis, pellentesque massa.
+8. Quisque id purus ut lectus faucibus eleifend eget sit amet lorem.
+9. Pellentesque tempor tellus id suscipit egestas.
+10. Nunc tristique lorem id augue pretium, at semper mauris rutrum.
+11 Vivamus porttitor ex eget libero varius sollicitudin id eu nunc.
+12. Vestibulum imperdiet odio in accumsan scelerisque.
+13. Nullam consequat nisl facilisis facilisis bibendum.
+14. Pellentesque eleifend ipsum vel rhoncus auctor.
+15. Vivamus in velit quis purus euismod pellentesque.
+16. Ut sed enim iaculis dolor ultrices sodales.
+17. Sed ut nulla eu elit facilisis dapibus ut sed odio.
+18. Maecenas vel magna ut ante malesuada mattis ac vel lacus.
+19. Sed sodales erat quis massa vestibulum, sit amet aliquam leo congue.
+20. Quisque sodales justo non libero viverra, non pulvinar arcu ultricies.
+21. Sed id augue a neque faucibus rutrum vel id leo.
+22. Donec ut purus eu neque pretium laoreet quis sed leo.
+"
+            android:textSize="15sp" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

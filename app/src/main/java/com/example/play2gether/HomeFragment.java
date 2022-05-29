@@ -65,33 +65,32 @@ public class HomeFragment extends Fragment {
 
         // BOTTOM SECTION
         bot1 = (ImageView) view.findViewById(R.id.wesprzyj);
-        bot2 = (ImageView) view.findViewById(R.id.kontakt);
-        bot3 = (ImageView) view.findViewById(R.id.regulamin);
-
         bot1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent in = new Intent(getActivity(), testActivity.class);
+                Intent in = new Intent(getActivity(), testActivity2.class);
                 in.putExtra("some","some data");
                 startActivity(in);
             }
         });
 
+        bot2 = (ImageView) view.findViewById(R.id.kontakt);
         bot2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent in = new Intent(getActivity(), testActivity.class);
-                in.putExtra("some","some data");
-                startActivity(in);
+                Intent in1 = new Intent(getActivity(), testActivity3.class);
+                in1.putExtra("some","some data");
+                startActivity(in1);
             }
         });
 
+        bot3 = (ImageView) view.findViewById(R.id.regulamin);
         bot3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent in = new Intent(getActivity(), testActivity.class);
-                in.putExtra("some","some data");
-                startActivity(in);
+                Intent in2 = new Intent(getActivity(), testActivity.class);
+                in2.putExtra("some","some data");
+                startActivity(in2);
             }
         });
 
