@@ -30,6 +30,8 @@ public class HomeFragment extends Fragment {
     LinearLayout l1, l2, l3;
     ImageView avatar;
 
+    ImageView bot1, bot2, bot3;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -59,6 +61,40 @@ public class HomeFragment extends Fragment {
                 // loadFragment(view);
             }
         });
+
+
+        // BOTTOM SECTION
+        bot1 = (ImageView) view.findViewById(R.id.wesprzyj);
+        bot2 = (ImageView) view.findViewById(R.id.kontakt);
+        bot3 = (ImageView) view.findViewById(R.id.regulamin);
+
+        bot1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in = new Intent(getActivity(), testActivity.class);
+                in.putExtra("some","some data");
+                startActivity(in);
+            }
+        });
+
+        bot2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in = new Intent(getActivity(), testActivity.class);
+                in.putExtra("some","some data");
+                startActivity(in);
+            }
+        });
+
+        bot3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in = new Intent(getActivity(), testActivity.class);
+                in.putExtra("some","some data");
+                startActivity(in);
+            }
+        });
+
         return view;
     }
 

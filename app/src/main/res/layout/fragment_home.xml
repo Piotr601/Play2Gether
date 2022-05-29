@@ -60,7 +60,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="5sp"
-                android:text="Niedaleko ciebie:"
+                android:text="Popularne:"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -103,18 +103,19 @@
                                     android:id="@+id/l1"
                                     android:gravity="center"
                                     android:orientation="vertical"
-                                    android:padding="16dp">
+                                    android:padding="12dp">
 
                                     <ImageView
-                                        android:layout_width="80dp"
-                                        android:layout_height="80dp"
-                                        android:src="@drawable/start_button1" />
+                                        android:layout_width="320dp"
+                                        android:layout_height="150dp"
+                                        android:src="@drawable/pic1"
+                                        android:scaleType="fitXY"/>
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="12dp"
-                                        android:text="Przycisk 1"
+                                        android:layout_marginTop="5dp"
+                                        android:text="Mlodzieżowe Centrum Sportu"
                                         android:textColor="#6f6f6f"
                                         android:textSize="18sp" />
 
@@ -137,18 +138,19 @@
                                     android:id="@+id/l2"
                                     android:gravity="center"
                                     android:orientation="vertical"
-                                    android:padding="16dp">
+                                    android:padding="12dp">
 
                                     <ImageView
-                                        android:layout_width="80dp"
-                                        android:layout_height="80dp"
-                                        android:src="@drawable/start_button1" />
+                                        android:layout_width="320dp"
+                                        android:layout_height="150dp"
+                                        android:src="@drawable/pic2"
+                                        android:scaleType="fitXY"/>
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="12dp"
-                                        android:text="Przycisk 1"
+                                        android:layout_marginTop="5dp"
+                                        android:text="GEM Boiska (Klub Sportowy AZS)"
                                         android:textColor="#6f6f6f"
                                         android:textSize="18sp" />
 
@@ -168,21 +170,22 @@
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:gravity="center"
                                     android:id="@+id/l3"
+                                    android:gravity="center"
                                     android:orientation="vertical"
-                                    android:padding="16dp">
+                                    android:padding="12dp">
 
                                     <ImageView
-                                        android:layout_width="80dp"
-                                        android:layout_height="80dp"
-                                        android:src="@drawable/start_button1" />
+                                        android:layout_width="320dp"
+                                        android:layout_height="150dp"
+                                        android:src="@drawable/pic3"
+                                        android:scaleType="fitXY"/>
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="12dp"
-                                        android:text="Przycisk 1"
+                                        android:layout_marginTop="5dp"
+                                        android:text="Boisko do siatkówki"
                                         android:textColor="#6f6f6f"
                                         android:textSize="18sp" />
 
@@ -204,7 +207,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="5sp"
-                android:text="Kategorie: "
+                android:text="Dyscypliny: "
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -249,15 +252,16 @@
                                     android:padding="16dp">
 
                                     <ImageView
-                                        android:layout_width="80dp"
-                                        android:layout_height="80dp"
-                                        android:src="@drawable/start_button1" />
+                                        android:layout_width="100dp"
+                                        android:layout_height="100dp"
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/pic10" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="12dp"
-                                        android:text="Przycisk 1"
+                                        android:text="Piłka nożna"
                                         android:textColor="#6f6f6f"
                                         android:textSize="18sp" />
 
@@ -282,15 +286,16 @@
                                     android:padding="16dp">
 
                                     <ImageView
-                                        android:layout_width="80dp"
-                                        android:layout_height="80dp"
-                                        android:src="@drawable/start_button1" />
+                                        android:layout_width="100dp"
+                                        android:layout_height="100dp"
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/pic11" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="12dp"
-                                        android:text="Przycisk 1"
+                                        android:text="Siatkówka"
                                         android:textColor="#6f6f6f"
                                         android:textSize="18sp" />
 
@@ -315,15 +320,16 @@
                                     android:padding="16dp">
 
                                     <ImageView
-                                        android:layout_width="80dp"
-                                        android:layout_height="80dp"
-                                        android:src="@drawable/start_button1" />
+                                        android:layout_width="100dp"
+                                        android:layout_height="100dp"
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/pic12" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="12dp"
-                                        android:text="Przycisk 1"
+                                        android:text="Koszykówka"
                                         android:textColor="#6f6f6f"
                                         android:textSize="18sp" />
 
@@ -348,15 +354,16 @@
                                     android:padding="16dp">
 
                                     <ImageView
-                                        android:layout_width="80dp"
-                                        android:layout_height="80dp"
-                                        android:src="@drawable/start_button1" />
+                                        android:layout_width="100dp"
+                                        android:layout_height="100dp"
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/pic14" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="12dp"
-                                        android:text="Przycisk 1"
+                                        android:text="Badminton"
                                         android:textColor="#6f6f6f"
                                         android:textSize="18sp" />
 
@@ -381,15 +388,16 @@
                                     android:padding="16dp">
 
                                     <ImageView
-                                        android:layout_width="80dp"
-                                        android:layout_height="80dp"
-                                        android:src="@drawable/start_button1" />
+                                        android:layout_width="100dp"
+                                        android:layout_height="100dp"
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/pic13" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="12dp"
-                                        android:text="Przycisk 1"
+                                        android:text="Piłka ręczna"
                                         android:textColor="#6f6f6f"
                                         android:textSize="18sp" />
 
@@ -634,7 +642,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:text="Przykładowe"
+                    android:text="Wesprzyj nas"
                     android:textSize="15sp" />
 
                 <ImageView
@@ -642,6 +650,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
+                    android:id="@+id/wesprzyj"
                     android:src="@drawable/right_arrow_black" />
 
 
@@ -658,7 +667,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:text="Przykładowe"
+                    android:text="Kontakt"
                     android:textSize="15sp" />
 
                 <ImageView
@@ -666,6 +675,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
+                    android:id="@+id/kontakt"
                     android:src="@drawable/right_arrow_black" />
 
 
@@ -682,7 +692,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:text="Przykładowe"
+                    android:text="Regulamin"
                     android:textSize="15sp" />
 
                 <ImageView
@@ -690,6 +700,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
+                    android:id="@+id/regulamin"
                     android:src="@drawable/right_arrow_black" />
 
             </RelativeLayout>
