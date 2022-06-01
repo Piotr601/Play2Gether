@@ -26,10 +26,13 @@ import android.widget.Toast;
 
 import com.ismaeldivita.chipnavigation.ChipNavigationBar;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class HomeFragment extends Fragment {
 
     LinearLayout l1, l2, l3;
-    ImageView avatar;
+    ImageView avatar, add_home;
 
     ImageView bot1, bot2, bot3;
 
@@ -69,36 +72,56 @@ public class HomeFragment extends Fragment {
         bot2 = (ImageView) view.findViewById(R.id.kontakt);
         bot3 = (ImageView) view.findViewById(R.id.regulamin);
 
-
+        // DONATE
         bot1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent in1 = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.buycoffee.to/play2gether"));
-                startActivity(in1);
+                Intent intent_donate = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.buycoffee.to/play2gether"));
+                startActivity(intent_donate);
             }
         });
 
+        // CONTACT
         bot2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent in = new Intent(getActivity(), testActivity2.class);
-                in.putExtra("some","some data");
-                startActivity(in);
+                sendMail();
             }
         });
 
+        // POLICY
         bot3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent in2 = new Intent(getActivity(), testActivity.class);
-                in2.putExtra("some","some data");
-                startActivity(in2);
+                Intent intent_policy = new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/file/d/13mBNJzbyTEa6BXeZHZLf6Zla0f0qhyex/view?usp=sharing"));
+                startActivity(intent_policy);
             }
         });
 
         return view;
     }
 
+
+    // SEND EMAIL FUNCTION
+    private void sendMail() {
+        Date date = new Date();
+        SimpleDateFormat formatterdate = new SimpleDateFormat("dd-MM-yyyy");
+        SimpleDateFormat formattertime = new SimpleDateFormat("HH:mm:ss");
+
+        String recipientList = "appplay2gether@gmail.com";
+        String[] recipient = recipientList.split(",");
+
+        String subject = "Bug report / Problem";
+        String message = "Date: " + formatterdate.format(date) + "\nTime: "+ formattertime.format(date) + "\n\nThis is a bug report, please specify what is not working.\n\n";
+
+        Intent intent_contact = new Intent(Intent.ACTION_SEND);
+        intent_contact.putExtra(Intent.EXTRA_EMAIL, recipient);
+        intent_contact.putExtra(Intent.EXTRA_SUBJECT, subject);
+        intent_contact.putExtra(Intent.EXTRA_TEXT, message);
+
+        intent_contact.setType("message/rfc882");
+        startActivity(Intent.createChooser(intent_contact, "Choose an email client"));
+    }
 
     // OTHER FUNCTIONS
     private void loadFragment(View view) {

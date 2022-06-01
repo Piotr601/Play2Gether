@@ -14,12 +14,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Play2Gether" >
         <activity
-            android:name=".testActivity2"
-            android:exported="false" />
-        <activity
-            android:name=".testActivity3"
-            android:exported="false" />
-        <activity
             android:name=".testActivity"
             android:exported="false" />
         <activity
