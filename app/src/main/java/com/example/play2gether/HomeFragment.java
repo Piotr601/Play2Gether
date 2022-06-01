@@ -3,6 +3,7 @@ package com.example.play2gether;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -65,7 +66,19 @@ public class HomeFragment extends Fragment {
 
         // BOTTOM SECTION
         bot1 = (ImageView) view.findViewById(R.id.wesprzyj);
+        bot2 = (ImageView) view.findViewById(R.id.kontakt);
+        bot3 = (ImageView) view.findViewById(R.id.regulamin);
+
+
         bot1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in1 = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.buycoffee.to/play2gether"));
+                startActivity(in1);
+            }
+        });
+
+        bot2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent in = new Intent(getActivity(), testActivity2.class);
@@ -74,17 +87,6 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        bot2 = (ImageView) view.findViewById(R.id.kontakt);
-        bot2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent in1 = new Intent(getActivity(), testActivity3.class);
-                in1.putExtra("some","some data");
-                startActivity(in1);
-            }
-        });
-
-        bot3 = (ImageView) view.findViewById(R.id.regulamin);
         bot3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.amar.library.ui.StickyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
+    app:stickyHeader="@id/create"
     tools:context=".HomeFragment">
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -55,6 +52,14 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/create"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ff3fff">
+            </LinearLayout>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -65,10 +70,10 @@
                 android:textStyle="bold" />
 
             <RelativeLayout
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
 
                 <HorizontalScrollView
                     android:layout_width="match_parent"
@@ -98,9 +103,9 @@
                                 app:cardElevation="12dp">
 
                                 <LinearLayout
+                                    android:id="@+id/l1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:id="@+id/l1"
                                     android:gravity="center"
                                     android:orientation="vertical"
                                     android:padding="12dp">
@@ -108,8 +113,8 @@
                                     <ImageView
                                         android:layout_width="320dp"
                                         android:layout_height="150dp"
-                                        android:src="@drawable/pic1"
-                                        android:scaleType="fitXY"/>
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/pic1" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
@@ -133,9 +138,9 @@
                                 app:cardElevation="12dp">
 
                                 <LinearLayout
+                                    android:id="@+id/l2"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:id="@+id/l2"
                                     android:gravity="center"
                                     android:orientation="vertical"
                                     android:padding="12dp">
@@ -143,8 +148,8 @@
                                     <ImageView
                                         android:layout_width="320dp"
                                         android:layout_height="150dp"
-                                        android:src="@drawable/pic2"
-                                        android:scaleType="fitXY"/>
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/pic2" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
@@ -168,9 +173,9 @@
                                 app:cardElevation="12dp">
 
                                 <LinearLayout
+                                    android:id="@+id/l3"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:id="@+id/l3"
                                     android:gravity="center"
                                     android:orientation="vertical"
                                     android:padding="12dp">
@@ -178,8 +183,8 @@
                                     <ImageView
                                         android:layout_width="320dp"
                                         android:layout_height="150dp"
-                                        android:src="@drawable/pic3"
-                                        android:scaleType="fitXY"/>
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/pic3" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
@@ -202,20 +207,20 @@
             </RelativeLayout>
 
             <TextView
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="5sp"
+                android:layout_marginEnd="20dp"
                 android:text="Dyscypliny: "
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <RelativeLayout
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
 
                 <HorizontalScrollView
                     android:layout_width="match_parent"
@@ -414,11 +419,11 @@
             </RelativeLayout>
 
             <TextView
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="5sp"
+                android:layout_marginEnd="10dp"
                 android:text="Niedaleko ciebie:"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -625,18 +630,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
                 android:layout_marginTop="5sp"
+                android:layout_marginEnd="20dp"
                 android:text="Inne:"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_height="wrap_content">
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -646,11 +651,11 @@
                     android:textSize="15sp" />
 
                 <ImageView
+                    android:id="@+id/wesprzyj"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:id="@+id/wesprzyj"
                     android:src="@drawable/right_arrow_black" />
 
 
@@ -658,10 +663,10 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
                 android:layout_marginTop="5dp"
-                android:layout_height="wrap_content">
+                android:layout_marginEnd="20dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -671,11 +676,11 @@
                     android:textSize="15sp" />
 
                 <ImageView
+                    android:id="@+id/kontakt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:id="@+id/kontakt"
                     android:src="@drawable/right_arrow_black" />
 
 
@@ -683,10 +688,10 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_height="wrap_content">
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -696,11 +701,11 @@
                     android:textSize="15sp" />
 
                 <ImageView
+                    android:id="@+id/regulamin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:id="@+id/regulamin"
                     android:src="@drawable/right_arrow_black" />
 
             </RelativeLayout>
@@ -708,10 +713,8 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="65dp"/>
+                android:layout_marginTop="65dp" />
 
         </LinearLayout>
 
-    </ScrollView>
-
-</RelativeLayout>
+</com.amar.library.ui.StickyScrollView>
