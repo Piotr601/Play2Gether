@@ -4,7 +4,7 @@
     package="com.example.aoc.googlemapdemo"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#454545"
+    android:background="#FFFFFF"
     tools:context=".MapFragment">
 
     <fragment
@@ -12,5 +12,11 @@
         android:layout_height="match_parent"
         android:id="@+id/google_map"
         android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <ImageView
+        android:id="@+id/my_location"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_baseline_my_location_24"/>
 
 </RelativeLayout>

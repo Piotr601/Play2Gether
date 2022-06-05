@@ -60,16 +60,37 @@ public class MainActivity extends AppCompatActivity implements ChipNavigationBar
         setContentView(R.layout.activity_login);
 
         SignInButton signInButton = findViewById(R.id.sign_in_button);
-
         TextView signin = (TextView) findViewById(R.id.signin);
         TextView username = (TextView) findViewById(R.id.username);
         TextView password = (TextView) findViewById(R.id.password);
+        TextView forgotpass = (TextView) findViewById(R.id.forgotpass);
+        TextView newaccount = (TextView) findViewById(R.id.newaccount);
+        TextView login_or = (TextView) findViewById(R.id.login_or);
         MaterialButton loginbtn = (MaterialButton) findViewById(R.id.loginbtn);
+        SignInButton sign_in_button = (SignInButton) findViewById(R.id.sign_in_button);
 
         // No bar on top
         //this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         Objects.requireNonNull(getSupportActionBar()).hide();
+
+        signin.setTranslationY(700);
+        loginbtn.setTranslationY(700);
+        username.setTranslationY(700);
+        password.setTranslationY(700);
+        forgotpass.setTranslationY(700);
+        newaccount.setTranslationY(700);
+        login_or.setTranslationY(700);
+        sign_in_button.setTranslationY(700);
+
+        signin.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(300).start();
+        loginbtn.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(300).start();
+        username.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(300).start();
+        password.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(300).start();
+        forgotpass.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(2000).start();
+        newaccount.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(3000).start();
+        login_or.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(4000).start();
+        sign_in_button.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(4200).start();
 
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -97,7 +118,6 @@ public class MainActivity extends AppCompatActivity implements ChipNavigationBar
             }
         });
     }
-
 
     /// LOGIN GOOGLE
     private void singIn(){
