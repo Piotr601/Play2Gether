@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity implements ChipNavigationBar
     GoogleSignInClient gsc;
     private static int RC_SIGN_IN = 100;
     public static String NAME;
+    public static String FULLNAME;
     public static Uri PHOTO;
 
     @Override
@@ -75,7 +76,7 @@ public class MainActivity extends AppCompatActivity implements ChipNavigationBar
                 if(username.getText().toString().equals("admin") && password.getText().toString().equals("admin")){
                     //correct
                     Toast.makeText(MainActivity.this,"LOGIN SUCCESSFUL",Toast.LENGTH_SHORT).show();
-
+                    NAME = username.getText().toString();
                     SuccessLogin();
                 }else {
                     //incorrect
@@ -127,7 +128,7 @@ public class MainActivity extends AppCompatActivity implements ChipNavigationBar
                 Uri personPhoto = acct.getPhotoUrl();
 
                 NAME = personGivenName;
-                PHOTO = personPhoto;
+                FULLNAME = personName;
             }
             SuccessLogin();
 
