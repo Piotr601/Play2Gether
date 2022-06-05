@@ -48,8 +48,6 @@ public class MainActivity extends AppCompatActivity implements ChipNavigationBar
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        StrictMode.ThreadPolicy gfgPolicy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-        StrictMode.setThreadPolicy(gfgPolicy);
 
         // GOOGLE LOGIN IN
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -75,10 +73,11 @@ public class MainActivity extends AppCompatActivity implements ChipNavigationBar
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(username.getText().toString().equals("admin") && password.getText().toString().equals("admin")){
+//                if(username.getText().toString().equals("admin") && password.getText().toString().equals("admin")){
+                if (REST.login("admin@email.com","admin1")) {
                     //correct
                     Toast.makeText(MainActivity.this,"LOGIN SUCCESSFUL",Toast.LENGTH_SHORT).show();
-                    REST.login("admin@email.com","admin1");
+                    Log.d("JWT: ", REST.JWT);
                     SuccessLogin();
                 }else {
                     //incorrect
