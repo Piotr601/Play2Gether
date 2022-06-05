@@ -37,7 +37,8 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Imię"
+                    android:id="@+id/home_imie_id"
+                    android:text="imie"
                     android:textSize="25sp"
                     android:textStyle="bold" />
 
@@ -301,13 +302,83 @@
                                     android:orientation="vertical"
                                     android:padding="10dp">
 
-                                    <ImageView
-                                        android:layout_width="325dp"
-                                        android:layout_height="150dp"
-                                        android:background="@color/text_shadow"
-                                        android:padding="0.5dp"
-                                        android:scaleType="fitXY"
-                                        android:src="@drawable/pic2" />
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <ImageView
+                                            android:layout_width="325dp"
+                                            android:layout_height="150dp"
+                                            android:background="@color/text_shadow"
+                                            android:padding="0.5dp"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/pic2" />
+
+                                        <ImageView
+                                            android:layout_width="62.5dp"
+                                            android:layout_height="22.5dp"
+                                            android:src="@drawable/settings_rounded"
+                                            android:layout_marginTop="3.5dp"
+                                            android:layout_marginStart="3.5dp" />
+
+                                        <ImageView
+                                            android:layout_width="60dp"
+                                            android:layout_height="20dp"
+                                            android:layout_marginStart="4.5dp"
+                                            android:layout_marginTop="4.5dp"
+                                            android:src="@drawable/settings_rounded13" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_marginTop="7dp"
+                                            android:text="+ DOŁĄCZ"
+                                            android:shadowColor="@color/black"
+                                            android:shadowDx="2"
+                                            android:shadowDy="2"
+                                            android:shadowRadius="1"
+                                            android:textColor="@color/white"
+                                            android:textSize="10sp"
+                                            android:textStyle="bold" />
+
+
+                                        <ImageView
+                                            android:layout_width="41.5dp"
+                                            android:layout_height="16.5dp"
+                                            android:layout_marginStart="3.5dp"
+                                            android:layout_marginTop="27.5dp"
+                                            android:src="@drawable/settings_rounded" />
+
+                                        <ImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="15dp"
+                                            android:layout_marginStart="4dp"
+                                            android:layout_marginTop="28dp"
+                                            android:src="@drawable/settings_rounded12" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="18dp"
+                                            android:layout_marginTop="28dp"
+                                            android:shadowColor="@color/black"
+                                            android:shadowDx="2"
+                                            android:shadowDy="2"
+                                            android:shadowRadius="1"
+                                            android:text="3/12"
+                                            android:textColor="@color/white"
+                                            android:textSize="10sp"
+                                            android:textStyle="bold" />
+
+                                        <ImageView
+                                            android:layout_width="13dp"
+                                            android:layout_height="13dp"
+                                            android:layout_marginStart="6dp"
+                                            android:layout_marginTop="29.5dp"
+                                            android:src="@drawable/ic_baseline_person_24" />
+
+                                    </RelativeLayout>
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -360,13 +431,83 @@
                                     android:orientation="vertical"
                                     android:padding="10dp">
 
-                                    <ImageView
-                                        android:layout_width="325dp"
-                                        android:layout_height="150dp"
-                                        android:background="@color/text_shadow"
-                                        android:padding="0.5dp"
-                                        android:scaleType="fitXY"
-                                        android:src="@drawable/pic3" />
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <ImageView
+                                            android:layout_width="325dp"
+                                            android:layout_height="150dp"
+                                            android:background="@color/text_shadow"
+                                            android:padding="0.5dp"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/pic3" />
+
+                                        <ImageView
+                                            android:layout_width="62.5dp"
+                                            android:layout_height="22.5dp"
+                                            android:src="@drawable/settings_rounded"
+                                            android:layout_marginTop="3.5dp"
+                                            android:layout_marginStart="3.5dp" />
+
+                                        <ImageView
+                                            android:layout_width="60dp"
+                                            android:layout_height="20dp"
+                                            android:layout_marginStart="4.5dp"
+                                            android:layout_marginTop="4.5dp"
+                                            android:src="@drawable/settings_rounded13" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_marginTop="7dp"
+                                            android:text="+ DOŁĄCZ"
+                                            android:shadowColor="@color/black"
+                                            android:shadowDx="2"
+                                            android:shadowDy="2"
+                                            android:shadowRadius="1"
+                                            android:textColor="@color/white"
+                                            android:textSize="10sp"
+                                            android:textStyle="bold" />
+
+
+                                        <ImageView
+                                            android:layout_width="41.5dp"
+                                            android:layout_height="16.5dp"
+                                            android:layout_marginStart="3.5dp"
+                                            android:layout_marginTop="27.5dp"
+                                            android:src="@drawable/settings_rounded" />
+
+                                        <ImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="15dp"
+                                            android:layout_marginStart="4dp"
+                                            android:layout_marginTop="28dp"
+                                            android:src="@drawable/settings_rounded12" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="18dp"
+                                            android:layout_marginTop="28dp"
+                                            android:shadowColor="@color/black"
+                                            android:shadowDx="2"
+                                            android:shadowDy="2"
+                                            android:shadowRadius="1"
+                                            android:text="8/12"
+                                            android:textColor="@color/white"
+                                            android:textSize="10sp"
+                                            android:textStyle="bold" />
+
+                                        <ImageView
+                                            android:layout_width="13dp"
+                                            android:layout_height="13dp"
+                                            android:layout_marginStart="6dp"
+                                            android:layout_marginTop="29.5dp"
+                                            android:src="@drawable/ic_baseline_person_24" />
+
+                                    </RelativeLayout>
                                 </LinearLayout>
 
                                 <LinearLayout

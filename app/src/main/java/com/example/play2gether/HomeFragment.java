@@ -22,6 +22,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.ismaeldivita.chipnavigation.ChipNavigationBar;
@@ -36,11 +37,17 @@ public class HomeFragment extends Fragment {
 
     ImageView bot1, bot2, bot3;
 
+    TextView home_imie_id;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_home, container, false);
+
+        home_imie_id = (TextView) view.findViewById(R.id.home_imie_id);
+        home_imie_id.setText(MainActivity.NAME);
+
 
         // cardview slide
         l1 = (LinearLayout) view.findViewById(R.id.l1);
