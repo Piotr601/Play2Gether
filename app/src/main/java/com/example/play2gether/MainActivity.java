@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -73,12 +74,15 @@ public class MainActivity extends AppCompatActivity implements ChipNavigationBar
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(username.getText().toString().equals("admin") && password.getText().toString().equals("admin")){
+//                if(username.getText().toString().equals("admin") && password.getText().toString().equals("admin")){
+                if (REST.login("admin@email.com","admin1")) {
                     //correct
                     Toast.makeText(MainActivity.this,"LOGIN SUCCESSFUL",Toast.LENGTH_SHORT).show();
+                    Log.d("JWT: ", REST.JWT);
+                    REST.GetActivities();
                     NAME = username.getText().toString();
                     SuccessLogin();
-                }else {
+                } else {
                     //incorrect
                     Toast.makeText(MainActivity.this, "LOGIN FAILED !!!", Toast.LENGTH_SHORT).show();
                 }
