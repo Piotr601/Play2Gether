@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -47,6 +48,8 @@ public class MainActivity extends AppCompatActivity implements ChipNavigationBar
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        StrictMode.ThreadPolicy gfgPolicy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(gfgPolicy);
 
         // GOOGLE LOGIN IN
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -75,7 +78,7 @@ public class MainActivity extends AppCompatActivity implements ChipNavigationBar
                 if(username.getText().toString().equals("admin") && password.getText().toString().equals("admin")){
                     //correct
                     Toast.makeText(MainActivity.this,"LOGIN SUCCESSFUL",Toast.LENGTH_SHORT).show();
-
+                    REST.login("admin@email.com","admin1");
                     SuccessLogin();
                 }else {
                     //incorrect
