@@ -10,6 +10,8 @@ import com.google.android.gms.location.LocationRequest;
 
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
+import android.location.Address;
+import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
@@ -46,10 +48,15 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 
+import java.io.IOException;
+import java.util.List;
+import java.util.Locale;
+
 public class MapFragment extends Fragment {
 
     GoogleMap googleMap;
     ImageView my_location;
+    double lat = 51.103947, lng = 17.034383;
 
     FusedLocationProviderClient fusedLocationProviderClient;
 
@@ -57,7 +64,7 @@ public class MapFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(getActivity());
+        fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(getContext());
     }
 
     @Override
@@ -67,6 +74,7 @@ public class MapFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_map, container, false);
         my_location = (ImageView) view.findViewById(R.id.my_location);
+
 
         SupportMapFragment supportMapFragment = (SupportMapFragment) getChildFragmentManager()
                 .findFragmentById(R.id.google_map);
@@ -81,10 +89,9 @@ public class MapFragment extends Fragment {
                 // Moves camera to coordinates
                 // Animates camera to coordinates
                 MarkerOptions markerDef = new MarkerOptions();
-                CameraUpdate point = CameraUpdateFactory.newLatLngZoom(new LatLng(51.103947, 17.034383), 13);
+                CameraUpdate point = CameraUpdateFactory.newLatLngZoom(new LatLng(lat, lng), 13);
                 googleMap.moveCamera(point);
                 googleMap.animateCamera(point);
-
 
                 // CLEARING MAP AND RECOVERY
                 mapClearing(googleMap);
@@ -107,6 +114,9 @@ public class MapFragment extends Fragment {
                 googleMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
                     @Override
                     public void onMapClick(@NonNull LatLng latLng) {
+                        mapClearing(googleMap);
+                        mapRestorationMarks(googleMap);
+
                         // when clicked on map
                         // initialize marker options
                         MarkerOptions markerOptions = new MarkerOptions();
@@ -125,16 +135,60 @@ public class MapFragment extends Fragment {
                         googleMap.addMarker(markerOptions);
                     }
                 });
+
+                my_location.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        mapClearing(googleMap);
+                        mapRestorationMarks(googleMap);
+
+                        if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+                            getLocation();
+
+                            CameraUpdate point = CameraUpdateFactory.newLatLngZoom(new LatLng(lat, lng), 13);
+                            LatLng temp  = new LatLng(lat, lng);
+                            MarkerOptions markerOptions = new MarkerOptions();
+                            markerOptions.position(temp);
+                            markerOptions.title("Twoja pozycja");
+                            googleMap.addMarker(markerOptions);
+                            googleMap.animateCamera(point);
+                        } else {
+                            ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 44);
+                        }
+                    }
+                });
             }
         });
 
-        my_location.setOnClickListener(new View.OnClickListener() {
+        return view;
+    }
+
+
+    private void getLocation() {
+        if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
+                ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            return;
+        }
+        else
+        {
+        fusedLocationProviderClient.getLastLocation().addOnCompleteListener(new OnCompleteListener<Location>() {
             @Override
-            public void onClick(View view) {
-                Toast.makeText(getActivity(),"Klik",Toast.LENGTH_SHORT).show();
+            public void onComplete(@NonNull Task<Location> task) {
+                Location location = task.getResult();
+                if (location != null) {
+                    try {
+                        Geocoder geocoder = new Geocoder(getActivity(), Locale.getDefault());
+                        List<Address> adressList = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
+                        lat = adressList.get(0).getLatitude();
+                        lng = adressList.get(0).getLongitude();
+
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
             }
         });
-        return view;
+        }
     }
 
     private void mapRestorationMarks(GoogleMap googleMap){
