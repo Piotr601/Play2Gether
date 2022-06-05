@@ -78,8 +78,9 @@ public class MainActivity extends AppCompatActivity implements ChipNavigationBar
                     //correct
                     Toast.makeText(MainActivity.this,"LOGIN SUCCESSFUL",Toast.LENGTH_SHORT).show();
                     Log.d("JWT: ", REST.JWT);
+                    REST.GetActivities();
                     SuccessLogin();
-                }else {
+                } else {
                     //incorrect
                     Toast.makeText(MainActivity.this, "LOGIN FAILED !!!", Toast.LENGTH_SHORT).show();
                 }
