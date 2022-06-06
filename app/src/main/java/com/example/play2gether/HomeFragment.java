@@ -32,7 +32,9 @@ import java.util.Date;
 
 public class HomeFragment extends Fragment {
 
-    LinearLayout l1, l2, l3;
+    LinearLayout l1,l2,l3,d1,d2,d3,d4,d5;
+    ImageView l1_join,l2_join,l3_join;
+
     ImageView avatar, add_home;
 
     ImageView bot1, bot2, bot3;
@@ -48,20 +50,113 @@ public class HomeFragment extends Fragment {
         home_imie_id = (TextView) view.findViewById(R.id.home_imie_id);
         home_imie_id.setText(MainActivity.NAME);
 
+        // TOP SECTION
+        add_home = (ImageView) view.findViewById(R.id.add_home);
+        add_home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getActivity(), "ADDING NEW ACTIVITY", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         // cardview slide
         l1 = (LinearLayout) view.findViewById(R.id.l1);
         l2 = (LinearLayout) view.findViewById(R.id.l2);
         l3 = (LinearLayout) view.findViewById(R.id.l3);
+        l1_join = (ImageView) view.findViewById(R.id.l1_join);
+        l2_join = (ImageView) view.findViewById(R.id.l2_join);
+        l3_join = (ImageView) view.findViewById(R.id.l3_join);
 
         l1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent in = new Intent(getActivity(), testActivity.class);
-                in.putExtra("some","some data");
+                Toast.makeText(getActivity(), "L1", Toast.LENGTH_SHORT).show();
                 startActivity(in);
             }
         });
+        l2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in = new Intent(getActivity(), testActivity.class);
+                Toast.makeText(getActivity(), "L2", Toast.LENGTH_SHORT).show();
+                startActivity(in);
+            }
+        });
+        l3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in = new Intent(getActivity(), testActivity.class);
+                Toast.makeText(getActivity(), "L3", Toast.LENGTH_SHORT).show();
+                startActivity(in);
+            }
+        });
+        l1_join.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getActivity(), "L1_join", Toast.LENGTH_SHORT).show();
+            }
+        });
+        l2_join.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getActivity(), "L2_join", Toast.LENGTH_SHORT).show();
+            }
+        });
+        l3_join.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getActivity(), "L3_join", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        d1 = (LinearLayout) view.findViewById(R.id.d1);
+        d2 = (LinearLayout) view.findViewById(R.id.d2);
+        d3 = (LinearLayout) view.findViewById(R.id.d3);
+        d4 = (LinearLayout) view.findViewById(R.id.d4);
+        d5 = (LinearLayout) view.findViewById(R.id.d5);
+
+        d1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in = new Intent(getActivity(), testActivity.class);
+                Toast.makeText(getActivity(), "D1", Toast.LENGTH_SHORT).show();
+                startActivity(in);
+            }
+        });
+        d2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in = new Intent(getActivity(), testActivity.class);
+                Toast.makeText(getActivity(), "D2", Toast.LENGTH_SHORT).show();
+                startActivity(in);
+            }
+        });
+        d3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in = new Intent(getActivity(), testActivity.class);
+                Toast.makeText(getActivity(), "D3", Toast.LENGTH_SHORT).show();
+                startActivity(in);
+            }
+        });
+        d4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in = new Intent(getActivity(), testActivity.class);
+                Toast.makeText(getActivity(), "D4", Toast.LENGTH_SHORT).show();
+                startActivity(in);
+            }
+        });
+        d5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in = new Intent(getActivity(), testActivity.class);
+                Toast.makeText(getActivity(), "D5", Toast.LENGTH_SHORT).show();
+                startActivity(in);
+            }
+        });
+
 
 
         // clicking on avatar

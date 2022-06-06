@@ -74,10 +74,10 @@ public class MainActivity extends AppCompatActivity implements ChipNavigationBar
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         Objects.requireNonNull(getSupportActionBar()).hide();
 
-        signin.setTranslationY(700);
-        loginbtn.setTranslationY(700);
-        username.setTranslationY(700);
-        password.setTranslationY(700);
+        signin.setTranslationY(-700);
+        loginbtn.setTranslationY(-2700);
+        username.setTranslationY(-1700);
+        password.setTranslationY(-1700);
         forgotpass.setTranslationY(700);
         newaccount.setTranslationY(700);
         login_or.setTranslationY(700);

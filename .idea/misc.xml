@@ -12,10 +12,13 @@
         <entry key="..\:/Users/Pawel/StudioProjects/Play2Gether/app/src/main/res/layout/fragment_start.xml" value="0.13120567375886524" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3685" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/drawable-v24/settings_gradient.xml" value="0.1965" />
+        <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/drawable-v24/settings_gradient2.xml" value="0.4165" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/drawable-v24/settings_rounded.xml" value="0.242" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/drawable-v24/settings_rounded1.xml" value="0.242" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/drawable-v24/settings_rounded10.xml" value="0.1965" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/drawable-v24/settings_rounded11.xml" value="0.1965" />
+        <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/drawable-v24/settings_rounded14.xml" value="0.4165" />
+        <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/drawable-v24/settings_rounded15.xml" value="0.4165" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/drawable-v24/settings_rounded2.xml" value="0.1965" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/drawable-v24/settings_rounded3.xml" value="0.1965" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/drawable-v24/settings_rounded4.xml" value="0.1965" />
@@ -40,6 +43,7 @@
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/drawable/start_gradient.xml" value="0.308" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/drawable/start_gradient2.xml" value="0.524" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/layout/activity_2.xml" value="0.5453125" />
+        <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/layout/activity_language.xml" value="0.5" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/layout/activity_login.xml" value="0.5" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/layout/activity_main.xml" value="0.4265625" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/layout/activity_main2.xml" value="0.40208333333333335" />
@@ -49,13 +53,16 @@
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/layout/activity_test3.xml" value="0.55" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/layout/calendar_view.xml" value="0.37552083333333336" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/layout/fragment_home.xml" value="0.5266666666666666" />
+        <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/layout/fragment_language.xml" value="0.4661458333333333" />
+        <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/layout/fragment_language_fragment.xml" value="0.4661458333333333" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/layout/fragment_map.xml" value="0.5" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/layout/fragment_person.xml" value="0.37552083333333336" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/layout/fragment_person_left.xml" value="0.37552083333333336" />
-        <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/layout/fragment_settings.xml" value="0.33" />
+        <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/layout/fragment_settings.xml" value="0.5" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/layout/fragment_start.xml" value="0.33" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/layout/fragment_start1.xml" value="0.5453125" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/layout/fragment_start_new.xml" value="0.67" />
+        <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/layout/settings_popout.xml" value="0.55" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether/app/src/main/res/menu/nav_menu.xml" value="0.4265625" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether3/app/src/main/res/layout/activity_main.xml" value="0.55" />
         <entry key="..\:/Users/Piotr/AndroidStudioProjects/Play2Gether3/app/src/main/res/layout/fragment_home.xml" value="0.3109375" />

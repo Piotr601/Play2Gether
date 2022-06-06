@@ -35,9 +35,9 @@
                     android:textSize="20sp" />
 
                 <TextView
+                    android:id="@+id/home_imie_id"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/home_imie_id"
                     android:text="imie"
                     android:textSize="25sp"
                     android:textStyle="bold" />
@@ -91,9 +91,9 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:layout_marginTop="-35dp"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
+                android:layout_marginTop="-35dp"
 
                 android:orientation="vertical"
                 android:paddingStart="20dp"
@@ -108,11 +108,12 @@
                     android:textStyle="bold" />
 
             </RelativeLayout>
+
             <LinearLayout
-                android:layout_marginTop="4dp"
                 android:layout_width="match_parent"
                 android:layout_height="4dp"
-                android:background="#FFA724"/>
+                android:layout_marginTop="4dp"
+                android:background="#FFA724" />
 
         </LinearLayout>
 
@@ -173,83 +174,84 @@
                                     android:orientation="vertical"
                                     android:padding="10dp">
 
-                                <RelativeLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content">
-
-                                    <ImageView
-                                        android:layout_width="325dp"
-                                        android:layout_height="150dp"
-                                        android:background="@color/text_shadow"
-                                        android:padding="0.5dp"
-                                        android:scaleType="fitXY"
-                                        android:src="@drawable/pic1" />
-
-                                    <ImageView
-                                        android:layout_width="62.5dp"
-                                        android:layout_height="22.5dp"
-                                        android:src="@drawable/settings_rounded"
-                                        android:layout_marginTop="3.5dp"
-                                        android:layout_marginStart="3.5dp" />
-
-                                    <ImageView
-                                        android:layout_width="60dp"
-                                        android:layout_height="20dp"
-                                        android:layout_marginStart="4.5dp"
-                                        android:layout_marginTop="4.5dp"
-                                        android:src="@drawable/settings_rounded13" />
-
-                                    <TextView
+                                    <RelativeLayout
                                         android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginStart="10dp"
-                                        android:layout_marginTop="7dp"
-                                        android:shadowColor="@color/black"
-                                        android:shadowDx="2"
-                                        android:shadowDy="2"
-                                        android:shadowRadius="1"
-                                        android:text="+ DOŁĄCZ"
-                                        android:textColor="@color/white"
-                                        android:textSize="10sp"
-                                        android:textStyle="bold" />
+                                        android:layout_height="wrap_content">
+
+                                        <ImageView
+                                            android:layout_width="325dp"
+                                            android:layout_height="150dp"
+                                            android:background="@color/text_shadow"
+                                            android:padding="0.5dp"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/pic1" />
+
+                                        <ImageView
+                                            android:layout_width="62.5dp"
+                                            android:layout_height="22.5dp"
+                                            android:layout_marginStart="3.5dp"
+                                            android:layout_marginTop="3.5dp"
+                                            android:src="@drawable/settings_rounded" />
+
+                                        <ImageView
+                                            android:id="@+id/l1_join"
+                                            android:layout_width="60dp"
+                                            android:layout_height="20dp"
+                                            android:layout_marginStart="4.5dp"
+                                            android:layout_marginTop="4.5dp"
+                                            android:src="@drawable/settings_rounded13" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_marginTop="7dp"
+                                            android:shadowColor="@color/black"
+                                            android:shadowDx="2"
+                                            android:shadowDy="2"
+                                            android:shadowRadius="1"
+                                            android:text="+ DOŁĄCZ"
+                                            android:textColor="@color/white"
+                                            android:textSize="10sp"
+                                            android:textStyle="bold" />
 
 
-                                    <ImageView
-                                        android:layout_width="41.5dp"
-                                        android:layout_height="16.5dp"
-                                        android:layout_marginStart="3.5dp"
-                                        android:layout_marginTop="27.5dp"
-                                        android:src="@drawable/settings_rounded" />
+                                        <ImageView
+                                            android:layout_width="41.5dp"
+                                            android:layout_height="16.5dp"
+                                            android:layout_marginStart="3.5dp"
+                                            android:layout_marginTop="27.5dp"
+                                            android:src="@drawable/settings_rounded" />
 
-                                    <ImageView
-                                        android:layout_width="40dp"
-                                        android:layout_height="15dp"
-                                        android:layout_marginStart="4dp"
-                                        android:layout_marginTop="28dp"
-                                        android:src="@drawable/settings_rounded12" />
+                                        <ImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="15dp"
+                                            android:layout_marginStart="4dp"
+                                            android:layout_marginTop="28dp"
+                                            android:src="@drawable/settings_rounded12" />
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginStart="18dp"
-                                        android:layout_marginTop="28dp"
-                                        android:shadowColor="@color/black"
-                                        android:shadowDx="2"
-                                        android:shadowDy="2"
-                                        android:shadowRadius="1"
-                                        android:text="1/12"
-                                        android:textColor="@color/white"
-                                        android:textSize="10sp"
-                                        android:textStyle="bold" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="18dp"
+                                            android:layout_marginTop="28dp"
+                                            android:shadowColor="@color/black"
+                                            android:shadowDx="2"
+                                            android:shadowDy="2"
+                                            android:shadowRadius="1"
+                                            android:text="1/12"
+                                            android:textColor="@color/white"
+                                            android:textSize="10sp"
+                                            android:textStyle="bold" />
 
-                                    <ImageView
-                                        android:layout_width="13dp"
-                                        android:layout_height="13dp"
-                                        android:layout_marginStart="6dp"
-                                        android:layout_marginTop="29.5dp"
-                                        android:src="@drawable/ic_baseline_person_24" />
+                                        <ImageView
+                                            android:layout_width="13dp"
+                                            android:layout_height="13dp"
+                                            android:layout_marginStart="6dp"
+                                            android:layout_marginTop="29.5dp"
+                                            android:src="@drawable/ic_baseline_person_24" />
 
-                                </RelativeLayout>
+                                    </RelativeLayout>
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -260,7 +262,7 @@
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="40dp"
-                                    android:background="#B5FF9800">
+                                    android:background="#FF9C09">
 
                                     <TextView
                                         android:layout_width="match_parent"
@@ -317,12 +319,13 @@
                                         <ImageView
                                             android:layout_width="62.5dp"
                                             android:layout_height="22.5dp"
-                                            android:src="@drawable/settings_rounded"
+                                            android:layout_marginStart="3.5dp"
                                             android:layout_marginTop="3.5dp"
-                                            android:layout_marginStart="3.5dp" />
+                                            android:src="@drawable/settings_rounded" />
 
                                         <ImageView
                                             android:layout_width="60dp"
+                                            android:id="@+id/l2_join"
                                             android:layout_height="20dp"
                                             android:layout_marginStart="4.5dp"
                                             android:layout_marginTop="4.5dp"
@@ -333,11 +336,11 @@
                                             android:layout_height="wrap_content"
                                             android:layout_marginStart="10dp"
                                             android:layout_marginTop="7dp"
-                                            android:text="+ DOŁĄCZ"
                                             android:shadowColor="@color/black"
                                             android:shadowDx="2"
                                             android:shadowDy="2"
                                             android:shadowRadius="1"
+                                            android:text="+ DOŁĄCZ"
                                             android:textColor="@color/white"
                                             android:textSize="10sp"
                                             android:textStyle="bold" />
@@ -389,7 +392,7 @@
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="40dp"
-                                    android:background="#B5FF9800">
+                                    android:background="#FF9C09">
 
                                     <TextView
                                         android:layout_width="match_parent"
@@ -446,12 +449,13 @@
                                         <ImageView
                                             android:layout_width="62.5dp"
                                             android:layout_height="22.5dp"
-                                            android:src="@drawable/settings_rounded"
+                                            android:layout_marginStart="3.5dp"
                                             android:layout_marginTop="3.5dp"
-                                            android:layout_marginStart="3.5dp" />
+                                            android:src="@drawable/settings_rounded" />
 
                                         <ImageView
                                             android:layout_width="60dp"
+                                            android:id="@+id/l3_join"
                                             android:layout_height="20dp"
                                             android:layout_marginStart="4.5dp"
                                             android:layout_marginTop="4.5dp"
@@ -462,11 +466,11 @@
                                             android:layout_height="wrap_content"
                                             android:layout_marginStart="10dp"
                                             android:layout_marginTop="7dp"
-                                            android:text="+ DOŁĄCZ"
                                             android:shadowColor="@color/black"
                                             android:shadowDx="2"
                                             android:shadowDy="2"
                                             android:shadowRadius="1"
+                                            android:text="+ DOŁĄCZ"
                                             android:textColor="@color/white"
                                             android:textSize="10sp"
                                             android:textStyle="bold" />
@@ -518,7 +522,7 @@
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="40dp"
-                                    android:background="#B5FF9800">
+                                    android:background="#FF9C09">
 
                                     <TextView
                                         android:layout_width="match_parent"
@@ -601,6 +605,7 @@
                             app:cardElevation="5dp">
 
                             <LinearLayout
+                                android:id="@+id/d1"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:orientation="vertical">
@@ -656,6 +661,7 @@
                             app:cardElevation="5dp">
 
                             <LinearLayout
+                                android:id="@+id/d2"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:orientation="vertical">
@@ -712,6 +718,7 @@
                             app:cardElevation="5dp">
 
                             <LinearLayout
+                                android:id="@+id/d3"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:orientation="vertical">
@@ -768,6 +775,7 @@
                             app:cardElevation="5dp">
 
                             <LinearLayout
+                                android:id="@+id/d4"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:orientation="vertical">
@@ -823,6 +831,7 @@
                             app:cardElevation="5dp">
 
                             <LinearLayout
+                                android:id="@+id/d5"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:orientation="vertical">
@@ -1093,7 +1102,6 @@
             android:text="Wszystkie:"
             android:textSize="18sp"
             android:textStyle="bold" />
-
 
 
         <TextView

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#E8E8E8"
     tools:context=".SettingsFragment">
 
     <ScrollView
@@ -19,7 +19,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="170dp"
-                android:background="@drawable/settings_gradient" />
+                android:background="@drawable/settings_gradient2" />
 
             <com.mikhaellopez.circularimageview.CircularImageView
                 android:layout_width="170dp"
@@ -49,7 +49,7 @@
                 android:layout_height="40dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/settings_rounded"
+                android:background="@drawable/settings_rounded14"
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"
                 android:text="Edit Profile"
@@ -63,7 +63,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
-                android:background="@drawable/settings_rounded1"
+                android:background="@drawable/settings_rounded15"
                 android:orientation="vertical"
                 android:padding="15dp">
 
@@ -76,9 +76,10 @@
                         android:id="@+id/settingsicon1"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
+                        android:layout_marginTop="4dp"
                         android:background="@drawable/settings_rounded11"
-                        android:padding="12dp"
-                        android:src="@drawable/logo" />
+                        android:padding="10dp"
+                        android:src="@drawable/settings_sleep" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -87,7 +88,7 @@
                         android:layout_marginStart="20dp"
                         android:layout_toEndOf="@+id/settingsicon1"
                         android:text="Tryb nocny"
-                        android:textColor="#ffffff"
+                        android:textColor="#000000"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -110,9 +111,10 @@
                         android:id="@+id/settingsicon2"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
+                        android:layout_marginTop="4dp"
                         android:background="@drawable/settings_rounded2"
-                        android:padding="12dp"
-                        android:src="@drawable/logo" />
+                        android:padding="10dp"
+                        android:src="@drawable/settings_notifi" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -121,7 +123,7 @@
                         android:layout_marginStart="20dp"
                         android:layout_toEndOf="@+id/settingsicon2"
                         android:text="Powiadomienia"
-                        android:textColor="#ffffff"
+                        android:textColor="#000000"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -144,9 +146,10 @@
                         android:id="@+id/settingsicon3"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
+                        android:layout_marginTop="4dp"
                         android:background="@drawable/settings_rounded3"
-                        android:padding="12dp"
-                        android:src="@drawable/logo" />
+                        android:padding="7dp"
+                        android:src="@drawable/settings_vol" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -154,8 +157,8 @@
                         android:layout_centerVertical="true"
                         android:layout_marginStart="20dp"
                         android:layout_toEndOf="@+id/settingsicon3"
-                        android:text="Lokalizacja"
-                        android:textColor="#ffffff"
+                        android:text="Dźwięk"
+                        android:textColor="#000000"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -177,7 +180,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
-                android:background="@drawable/settings_rounded1"
+                android:background="@drawable/settings_rounded15"
                 android:orientation="vertical"
                 android:padding="15dp">
 
@@ -190,9 +193,10 @@
                         android:id="@+id/settingsicon4"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
+                        android:layout_marginTop="4dp"
                         android:background="@drawable/settings_rounded4"
-                        android:padding="12dp"
-                        android:src="@drawable/logo" />
+                        android:padding="8dp"
+                        android:src="@drawable/settings_share" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -200,17 +204,18 @@
                         android:layout_centerVertical="true"
                         android:layout_marginStart="20dp"
                         android:layout_toEndOf="@+id/settingsicon4"
-                        android:text="Przykładowe"
-                        android:textColor="#ffffff"
+                        android:text="Udostępnij"
+                        android:textColor="#000000"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
                     <ImageView
+                        android:id="@+id/set_a1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/settings_right_arrow_white" />
+                        android:src="@drawable/settings_right_arrow_black" />
 
 
                 </RelativeLayout>
@@ -225,9 +230,10 @@
                         android:id="@+id/settingsicon5"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
+                        android:layout_marginTop="4dp"
                         android:background="@drawable/settings_rounded5"
-                        android:padding="12dp"
-                        android:src="@drawable/logo" />
+                        android:padding="10dp"
+                        android:src="@drawable/settings_lang" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -235,17 +241,18 @@
                         android:layout_centerVertical="true"
                         android:layout_marginStart="20dp"
                         android:layout_toEndOf="@+id/settingsicon5"
-                        android:text="Przykładowe"
-                        android:textColor="#ffffff"
+                        android:text="Język"
+                        android:textColor="#000000"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
                     <ImageView
+                        android:id="@+id/set_a2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/settings_right_arrow_white" />
+                        android:src="@drawable/settings_right_arrow_black" />
 
 
                 </RelativeLayout>
@@ -260,9 +267,10 @@
                         android:id="@+id/settingsicon6"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
+                        android:layout_marginTop="4dp"
                         android:background="@drawable/settings_rounded6"
-                        android:padding="12dp"
-                        android:src="@drawable/logo" />
+                        android:padding="10dp"
+                        android:src="@drawable/settings_faqs" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -270,17 +278,18 @@
                         android:layout_centerVertical="true"
                         android:layout_marginStart="20dp"
                         android:layout_toEndOf="@+id/settingsicon6"
-                        android:text="Przykładowe"
-                        android:textColor="#ffffff"
+                        android:text="FAQs"
+                        android:textColor="#000000"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
                     <ImageView
+                        android:id="@+id/set_a3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/settings_right_arrow_white" />
+                        android:src="@drawable/settings_right_arrow_black" />
 
 
                 </RelativeLayout>
@@ -293,7 +302,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
-                android:background="@drawable/settings_rounded1"
+                android:background="@drawable/settings_rounded15"
                 android:orientation="vertical"
                 android:padding="15dp">
 
@@ -307,9 +316,10 @@
                         android:id="@+id/settingsicon7"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
+                        android:layout_marginTop="4dp"
                         android:background="@drawable/settings_rounded7"
-                        android:padding="12dp"
-                        android:src="@drawable/logo" />
+                        android:padding="10dp"
+                        android:src="@drawable/settings_mssg" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -318,16 +328,17 @@
                         android:layout_marginStart="20dp"
                         android:layout_toEndOf="@+id/settingsicon7"
                         android:text="Wyślij nam wiadomość"
-                        android:textColor="#ffffff"
+                        android:textColor="#000000"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
                     <ImageView
+                        android:id="@+id/set_a4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/settings_right_arrow_white" />
+                        android:src="@drawable/settings_right_arrow_black" />
 
 
                 </RelativeLayout>
@@ -342,9 +353,10 @@
                         android:id="@+id/settingsicon8"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
+                        android:layout_marginTop="4dp"
                         android:background="@drawable/settings_rounded8"
-                        android:padding="12dp"
-                        android:src="@drawable/logo" />
+                        android:padding="10dp"
+                        android:src="@drawable/settings_coffee" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -353,16 +365,17 @@
                         android:layout_marginStart="20dp"
                         android:layout_toEndOf="@+id/settingsicon8"
                         android:text="Wesprzyj projekt"
-                        android:textColor="#ffffff"
+                        android:textColor="#000000"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
                     <ImageView
+                        android:id="@+id/set_a5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/settings_right_arrow_white" />
+                        android:src="@drawable/settings_right_arrow_black" />
 
 
                 </RelativeLayout>
@@ -377,9 +390,10 @@
                         android:id="@+id/settingsicon9"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
+                        android:layout_marginTop="4dp"
                         android:background="@drawable/settings_rounded9"
-                        android:padding="12dp"
-                        android:src="@drawable/logo" />
+                        android:padding="10dp"
+                        android:src="@drawable/settings_book" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -388,16 +402,17 @@
                         android:layout_marginStart="20dp"
                         android:layout_toEndOf="@+id/settingsicon9"
                         android:text="O nas"
-                        android:textColor="#ffffff"
+                        android:textColor="#000000"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
                     <ImageView
+                        android:id="@+id/set_a6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/settings_right_arrow_white" />
+                        android:src="@drawable/settings_right_arrow_black" />
 
 
                 </RelativeLayout>
@@ -410,7 +425,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
-                android:background="@drawable/settings_rounded1"
+                android:background="@drawable/settings_rounded15"
                 android:orientation="vertical"
                 android:padding="15dp">
 
@@ -422,9 +437,10 @@
                         android:id="@+id/settingsicon10"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
+                        android:layout_marginTop="4dp"
                         android:background="@drawable/settings_rounded10"
-                        android:padding="12dp"
-                        android:src="@drawable/logo" />
+                        android:padding="10dp"
+                        android:src="@drawable/settings_logout" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -432,17 +448,18 @@
                         android:layout_centerVertical="true"
                         android:layout_marginStart="20dp"
                         android:layout_toEndOf="@+id/settingsicon10"
-                        android:text="tekst"
-                        android:textColor="#ffffff"
+                        android:text="Wyloguj"
+                        android:textColor="#000000"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
                     <ImageView
+                        android:id="@+id/set_a7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/settings_right_arrow_white" />
+                        android:src="@drawable/settings_right_arrow_black" />
 
 
                 </RelativeLayout>

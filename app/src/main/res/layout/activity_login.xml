@@ -115,7 +115,7 @@
 
             <com.google.android.gms.common.SignInButton
                 android:id="@+id/sign_in_button"
-                android:layout_width="300dp"
+                android:layout_width="210dp"
                 android:layout_height="match_parent" />
 
         </LinearLayout>

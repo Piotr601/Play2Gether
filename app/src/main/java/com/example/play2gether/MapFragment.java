@@ -142,7 +142,8 @@ public class MapFragment extends Fragment {
                         mapClearing(googleMap);
                         mapRestorationMarks(googleMap);
 
-                        if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+                        if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED &&
+                                ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
                             getLocation();
 
                             CameraUpdate point = CameraUpdateFactory.newLatLngZoom(new LatLng(lat, lng), 13);
@@ -154,15 +155,14 @@ public class MapFragment extends Fragment {
                             googleMap.animateCamera(point);
                         } else {
                             ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 44);
+                            ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, 44);
                         }
                     }
                 });
             }
         });
-
         return view;
     }
-
 
     private void getLocation() {
         if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
