@@ -44,7 +44,7 @@
                 android:textSize="30dp"
                 android:textStyle="bold" />
 
-            <androidx.appcompat.widget.AppCompatButton
+            <!--<androidx.appcompat.widget.AppCompatButton
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
@@ -55,7 +55,7 @@
                 android:text="Edit Profile"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
-                android:textStyle="bold" />
+                android:textStyle="bold" />-->
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -93,6 +93,7 @@
                         android:textStyle="bold" />
 
                     <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/s1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -114,7 +115,7 @@
                         android:layout_marginTop="4dp"
                         android:background="@drawable/settings_rounded2"
                         android:padding="10dp"
-                        android:src="@drawable/settings_notifi" />
+                        android:src="@drawable/settings_mic" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -122,12 +123,13 @@
                         android:layout_centerVertical="true"
                         android:layout_marginStart="20dp"
                         android:layout_toEndOf="@+id/settingsicon2"
-                        android:text="Powiadomienia"
+                        android:text="Mikrofon"
                         android:textColor="#000000"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
                     <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/s2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -163,6 +165,7 @@
                         android:textStyle="bold" />
 
                     <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/s3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
