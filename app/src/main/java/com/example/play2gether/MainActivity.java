@@ -73,8 +73,8 @@ public class MainActivity extends AppCompatActivity implements ChipNavigationBar
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                if(username.getText().toString().equals("admin") && password.getText().toString().equals("admin")){
-                if (REST.login("admin@email.com","admin1")) {
+//                if (REST.login("admin@email.com","admin1")) {
+                if (REST.login(username.getText().toString(),password.getText().toString())) {
                     //correct
                     Toast.makeText(MainActivity.this,"LOGIN SUCCESSFUL",Toast.LENGTH_SHORT).show();
                     Log.d("JWT: ", REST.JWT);
