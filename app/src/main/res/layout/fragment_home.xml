@@ -204,11 +204,11 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginStart="10dp"
                                         android:layout_marginTop="7dp"
-                                        android:text="+ DOŁĄCZ"
                                         android:shadowColor="@color/black"
                                         android:shadowDx="2"
                                         android:shadowDy="2"
                                         android:shadowRadius="1"
+                                        android:text="+ DOŁĄCZ"
                                         android:textColor="@color/white"
                                         android:textSize="10sp"
                                         android:textStyle="bold" />
