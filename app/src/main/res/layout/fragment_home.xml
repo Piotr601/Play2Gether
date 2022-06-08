@@ -930,41 +930,78 @@
                             app:cardElevation="5dp">
 
                             <LinearLayout
-                                android:layout_width="150dp"
-
+                                android:layout_width="120dp"
                                 android:layout_height="match_parent"
                                 android:gravity="center"
                                 android:orientation="vertical"
                                 android:padding="8dp">
 
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/pic10" />
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="12dp"
+                                    android:gravity="center"
                                     android:text="Orlik"
                                     android:textColor="#6f6f6f"
                                     android:textSize="18sp" />
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="12dp"
-                                    android:text="Orlik"
+                                    android:layout_marginTop="3dp"
+                                    android:text="6/22"
                                     android:textColor="#6f6f6f"
-                                    android:textSize="18sp" />
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="12dp"
-                                    android:text="Orlik"
-                                    android:textColor="#6f6f6f"
-                                    android:textSize="18sp" />
+                                    android:textSize="12sp" />
 
                             </LinearLayout>
 
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
-                            android:layout_width="150dp"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_margin="12dp"
+                            app:cardCornerRadius="12dp"
+                            app:cardElevation="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="8dp">
+
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/pic10" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Centrum sportu"
+                                    android:textColor="#6f6f6f"
+                                    android:textSize="18sp" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:text="12/22"
+                                    android:textColor="#6f6f6f"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="120dp"
 
                             android:layout_height="wrap_content"
                             android:layout_rowWeight="1"
@@ -980,72 +1017,25 @@
                                 android:orientation="vertical"
                                 android:padding="8dp">
 
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/pic11" />
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="12dp"
-                                    android:text="Boisko"
+                                    android:gravity="center"
+                                    android:text="BeachBar"
                                     android:textColor="#6f6f6f"
                                     android:textSize="18sp" />
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="12dp"
-                                    android:text="Boisko"
+                                    android:layout_marginTop="3dp"
+                                    android:text="7/12"
                                     android:textColor="#6f6f6f"
-                                    android:textSize="18sp" />
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="12dp"
-                                    android:text="Boisko"
-                                    android:textColor="#6f6f6f"
-                                    android:textSize="18sp" />
-
-                            </LinearLayout>
-
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="150dp"
-
-                            android:layout_height="wrap_content"
-                            android:layout_rowWeight="1"
-                            android:layout_columnWeight="1"
-                            android:layout_margin="12dp"
-                            app:cardCornerRadius="12dp"
-                            app:cardElevation="5dp">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:orientation="vertical"
-                                android:padding="8dp">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="12dp"
-                                    android:text="Kosz"
-                                    android:textColor="#6f6f6f"
-                                    android:textSize="18sp" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="12dp"
-                                    android:text="Kosz"
-                                    android:textColor="#6f6f6f"
-                                    android:textSize="18sp" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="12dp"
-                                    android:text="Kosz"
-                                    android:textColor="#6f6f6f"
-                                    android:textSize="18sp" />
+                                    android:textSize="12sp" />
 
                             </LinearLayout>
 
@@ -1061,35 +1051,32 @@
                             app:cardElevation="5dp">
 
                             <LinearLayout
-                                android:layout_width="150dp"
+                                android:layout_width="120dp"
 
                                 android:layout_height="match_parent"
                                 android:gravity="center"
                                 android:orientation="vertical"
                                 android:padding="8dp">
 
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/pic13" />
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="12dp"
-                                    android:text="Noga"
-                                    android:textColor="#6f6f6f"
-                                    android:textSize="18sp" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="12dp"
-                                    android:text="Noga"
+                                    android:gravity="center"
+                                    android:text="Boisko ZSE"
                                     android:textColor="#6f6f6f"
                                     android:textSize="18sp" />
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="12dp"
-                                    android:text="Noga"
+                                    android:layout_marginTop="3dp"
+                                    android:text="5/10"
                                     android:textColor="#6f6f6f"
-                                    android:textSize="18sp" />
+                                    android:textSize="12sp" />
 
                             </LinearLayout>
 
@@ -1105,35 +1092,31 @@
                             app:cardElevation="5dp">
 
                             <LinearLayout
-                                android:layout_width="150dp"
+                                android:layout_width="120dp"
                                 android:layout_height="match_parent"
                                 android:gravity="center"
                                 android:orientation="vertical"
                                 android:padding="8dp">
 
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/pic12" />
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="12dp"
-                                    android:text="Plażówka"
+                                    android:gravity="center"
+                                    android:text="Tartan LO VII"
                                     android:textColor="#6f6f6f"
                                     android:textSize="18sp" />
-
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="12dp"
-                                    android:text="Plażówka"
+                                    android:layout_marginTop="3dp"
+                                    android:text="6/8"
                                     android:textColor="#6f6f6f"
-                                    android:textSize="18sp" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="12dp"
-                                    android:text="Plażówka"
-                                    android:textColor="#6f6f6f"
-                                    android:textSize="18sp" />
+                                    android:textSize="12sp" />
 
                             </LinearLayout>
 

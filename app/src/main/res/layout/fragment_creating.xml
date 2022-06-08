@@ -7,6 +7,7 @@
     android:background="#E8E8E8"
     tools:context=".SettingsFragment">
 
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -15,12 +16,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:background="@drawable/start_gradient">
+
+                <ImageView
+                    android:id="@+id/buttonbackact3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/left_arrow_white"
+                    android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="match_parent"

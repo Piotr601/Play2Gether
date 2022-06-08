@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
@@ -28,6 +29,7 @@ public class CreatingFragment extends Fragment {
              editTextTextPersonName3,editTextTextPersonName4,editTextTextPersonName8;
     EditText editTextNumber;
     Button buttonact;
+    ImageView buttonbackact3;
 
     public String nowa_data, nowa_godzina, nowa_nazwa, nowa_kategoria, nowa_obiekt, nowa_adres, nowa_zal;
     public Integer nowa_ilosc_os;
@@ -59,6 +61,15 @@ public class CreatingFragment extends Fragment {
         editTextDate.setText(date_msg);
         editTextDate2.setText(time_msg);
 
+        buttonbackact3 = (ImageView) view.findViewById(R.id.buttonbackact3);
+        buttonbackact3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentTransaction fr = getFragmentManager().beginTransaction();;
+                fr.replace(R.id.fragment_container, new HomeFragment());
+                fr.commit();
+            }
+        });
 
         buttonact = (Button) view.findViewById(R.id.buttonact);
         buttonact.setOnClickListener(new View.OnClickListener() {
@@ -74,10 +85,8 @@ public class CreatingFragment extends Fragment {
                 {
                     Toast.makeText(getActivity(), "Uzupelnij wszystkie pola", Toast.LENGTH_SHORT).show();
                 }
-
             }
         });
-
         return view;
     }
 
