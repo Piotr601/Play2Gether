@@ -197,23 +197,72 @@ public class MapFragment extends Fragment {
         final LatLng COURT  = new LatLng(51.085484, 17.021309);
         final LatLng COURT1 = new LatLng(51.089322, 17.036011);
 
-        // Markers which will be printed on map
-        Marker markerCourt;
-        Marker markerCourt1;
+        final LatLng COURT2 = new LatLng(51.104590, 17.019720);
+        final LatLng COURT3 = new LatLng(51.093515, 17.036882);
+        final LatLng COURT4 = new LatLng(51.106836, 17.057461);
+        final LatLng COURT5 = new LatLng(51.106656, 17.040086);
+        final LatLng COURT6 = new LatLng(51.128133, 17.060036);
+        final LatLng COURT7 = new LatLng(51.109070, 17.002327);
+        final LatLng COURT8 = new LatLng(51.110960, 17.019070);
 
         // FIRST MARK (BLUE)
-        markerCourt = googleMap.addMarker(new MarkerOptions()
+        Marker markerCourt = googleMap.addMarker(new MarkerOptions()
                 .position(COURT)
                 .title("Młodzieżowe Centrum Sportu")
                 .snippet("Otwarte 12:00-20:00")
                 .icon(BitmapDescriptorFactory.defaultMarker(210))
         );
-        markerCourt1 = googleMap.addMarker(new MarkerOptions()
+        Marker markerCourt1 = googleMap.addMarker(new MarkerOptions()
                 .position(COURT1)
                 .title("Boisko do koszykówki")
                 .snippet("Otwarte całodobowo")
-                .icon(BitmapDescriptorFactory.defaultMarker(30))
+                .icon(BitmapDescriptorFactory.defaultMarker(20))
         );
+        Marker markerCourt2 = googleMap.addMarker(new MarkerOptions()
+                .position(COURT2)
+                .title("Boisko LGW Arena")
+                .snippet("Otwarte całodobowo")
+                .icon(BitmapDescriptorFactory.defaultMarker(210))
+        );
+        Marker markerCourt3 = googleMap.addMarker(new MarkerOptions()
+                .position(COURT3)
+                .title("Boisko do koszykówki przy SP nr 73")
+                .snippet("Otwarte całodobowo")
+                .icon(BitmapDescriptorFactory.defaultMarker(20))
+        );
+        Marker markerCourt5 = googleMap.addMarker(new MarkerOptions()
+                .position(COURT5)
+                .title("Boisko ZSE nr 3")
+                .snippet("Otwarte całodobowo")
+                .icon(BitmapDescriptorFactory.defaultMarker(20))
+        );
+
+        Marker markerCourt4 = googleMap.addMarker(new MarkerOptions()
+                .position(COURT4)
+                .title("Boisko do siatkówki plażowej")
+                .snippet("Otwarte całodobowo")
+                .icon(BitmapDescriptorFactory.defaultMarker(120))
+        );
+        Marker markerCourt6 = googleMap.addMarker(new MarkerOptions()
+                .position(COURT6)
+                .title("Prosto z mostu Beach Bar\nBoisko do siatkówki plażowej")
+                .snippet("Otwarte całodobowo")
+                .icon(BitmapDescriptorFactory.defaultMarker(120))
+        );
+        Marker markerCourt7 = googleMap.addMarker(new MarkerOptions()
+                .position(COURT7)
+                .title("Hasta la Vista\nBadmindton/Squash")
+                .snippet("Otwarte 9:00-23:00")
+                .icon(BitmapDescriptorFactory.defaultMarker(250))
+        );
+        Marker markerCourt8 = googleMap.addMarker(new MarkerOptions()
+                .position(COURT8)
+                .title("Boisko do piłki ręcznej")
+                .snippet("Otwarte całodobowo")
+                .icon(BitmapDescriptorFactory.defaultMarker(60))
+        );
+
+
 
         // not used for now
         //markerCourt.setTag(0);

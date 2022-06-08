@@ -868,7 +868,7 @@
                                         android:shadowDx="4"
                                         android:shadowDy="4"
                                         android:shadowRadius="3"
-                                        android:text="Siatkówka"
+                                        android:text="Piłka ręczna"
                                         android:textColor="@color/text_shadow_white"
                                         android:textSize="18sp"
                                         android:textStyle="bold" />
