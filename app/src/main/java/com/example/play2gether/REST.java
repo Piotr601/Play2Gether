@@ -15,8 +15,11 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.ObjectInputStream;
+import java.lang.reflect.Array;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
 
 public class REST {
     //if local it is IPv4 Address
@@ -279,4 +282,38 @@ public class REST {
         tempValue = "";
         return false;
     }
+
+    public static ArrayList getUserEventArray = null;
+
+    public static ArrayList getUserEvents() {
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    URL url = new URL(myURL + "/api/UserEvent/GetUserEvents");
+                    connection = (HttpURLConnection) url.openConnection();
+                    connection.setRequestProperty("Authorization","Bearer " + JWT);
+
+                    if (connection.getResponseCode() == 200) {
+                        InputStream is = connection.getInputStream();
+                        Log.d("inpustream: ",convertInputStreamToString(connection.getInputStream()));
+
+                        ObjectInputStream oin = new ObjectInputStream(connection.getInputStream());
+                        Log.d("oin", String.valueOf(oin));
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+        thread.start();
+        try {
+            thread.join();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return getUserEventArray;
+    }
+
 }

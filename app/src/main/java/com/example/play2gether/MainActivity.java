@@ -99,7 +99,6 @@ public class MainActivity extends AppCompatActivity implements ChipNavigationBar
                 if (REST.login(username.getText().toString(),password.getText().toString())) {
                     //correct
                     Toast.makeText(MainActivity.this,"LOGIN SUCCESSFUL",Toast.LENGTH_SHORT).show();
-                    Log.d("JWT: ", REST.JWT);
                     REST.GetActivities();
                     NAME = username.getText().toString();
                     SuccessLogin();
