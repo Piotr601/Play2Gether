@@ -204,7 +204,7 @@ public class MapFragment extends Fragment {
         // FIRST MARK (BLUE)
         markerCourt = googleMap.addMarker(new MarkerOptions()
                 .position(COURT)
-                .title("Boisko do piłki nożnej")
+                .title("Młodzieżowe Centrum Sportu")
                 .snippet("Otwarte 12:00-20:00")
                 .icon(BitmapDescriptorFactory.defaultMarker(210))
         );

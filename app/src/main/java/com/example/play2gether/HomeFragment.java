@@ -36,7 +36,7 @@ public class HomeFragment extends Fragment {
     ImageView l1_join,l2_join,l3_join;
 
     ImageView avatar, add_home;
-
+    ImageView all_activities;
     ImageView bot1, bot2, bot3;
 
     TextView home_imie_id;
@@ -55,7 +55,9 @@ public class HomeFragment extends Fragment {
         add_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "ADDING NEW ACTIVITY", Toast.LENGTH_SHORT).show();
+                FragmentTransaction fr = getFragmentManager().beginTransaction();;
+                fr.replace(R.id.fragment_container, new CreatingFragment());
+                fr.commit();
             }
         });
 
@@ -70,25 +72,20 @@ public class HomeFragment extends Fragment {
         l1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent in = new Intent(getActivity(), testActivity.class);
                 Toast.makeText(getActivity(), "L1", Toast.LENGTH_SHORT).show();
-                startActivity(in);
             }
         });
         l2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent in = new Intent(getActivity(), testActivity.class);
                 Toast.makeText(getActivity(), "L2", Toast.LENGTH_SHORT).show();
-                startActivity(in);
             }
         });
         l3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent in = new Intent(getActivity(), testActivity.class);
                 Toast.makeText(getActivity(), "L3", Toast.LENGTH_SHORT).show();
-                startActivity(in);
+
             }
         });
         l1_join.setOnClickListener(new View.OnClickListener() {
@@ -119,44 +116,33 @@ public class HomeFragment extends Fragment {
         d1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent in = new Intent(getActivity(), testActivity.class);
                 Toast.makeText(getActivity(), "D1", Toast.LENGTH_SHORT).show();
-                startActivity(in);
             }
         });
         d2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent in = new Intent(getActivity(), testActivity.class);
                 Toast.makeText(getActivity(), "D2", Toast.LENGTH_SHORT).show();
-                startActivity(in);
             }
         });
         d3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent in = new Intent(getActivity(), testActivity.class);
                 Toast.makeText(getActivity(), "D3", Toast.LENGTH_SHORT).show();
-                startActivity(in);
             }
         });
         d4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent in = new Intent(getActivity(), testActivity.class);
                 Toast.makeText(getActivity(), "D4", Toast.LENGTH_SHORT).show();
-                startActivity(in);
             }
         });
         d5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent in = new Intent(getActivity(), testActivity.class);
                 Toast.makeText(getActivity(), "D5", Toast.LENGTH_SHORT).show();
-                startActivity(in);
             }
         });
-
 
 
         // clicking on avatar
@@ -168,6 +154,15 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        all_activities = (ImageView) view.findViewById(R.id.all_activities);
+        all_activities.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentTransaction fr = getFragmentManager().beginTransaction();;
+                fr.replace(R.id.fragment_container, new AllActivities());
+                fr.commit();
+            }
+        });
 
         // BOTTOM SECTION
         bot1 = (ImageView) view.findViewById(R.id.wesprzyj);

@@ -84,14 +84,14 @@ public class SettingsFragment extends Fragment {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
                 if(isChecked){
-                    audioManager1.setMicrophoneMute(true);
+                    audioManager1.setMicrophoneMute(false);
                     SharedPreferences.Editor editor = getActivity().getSharedPreferences("save2",Context.MODE_PRIVATE).edit();
                     editor.putBoolean("value2",true);
                     editor.apply();
                     s2.setChecked(true);
                 }
                 else{
-                    audioManager1.setMicrophoneMute(false);
+                    audioManager1.setMicrophoneMute(true);
                     SharedPreferences.Editor editor = getActivity().getSharedPreferences("save2",Context.MODE_PRIVATE).edit();
                     editor.putBoolean("value2",false);
                     editor.apply();
