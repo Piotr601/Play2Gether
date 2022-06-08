@@ -16,29 +16,31 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:paddingBottom="25dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#FF5722"
-                android:gravity="center"
-                android:paddingTop="50dp"
-                android:text="Nowa Aktywność"
-                android:textColor="#331A1A"
-                android:textSize="40dp"
-                android:textStyle="bold" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="500dp"
-                android:background="@drawable/start_gradient" />
+                android:layout_height="150dp"
+                android:background="@drawable/start_gradient">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="60dp"
+                    android:paddingBottom="25dp"
+                    android:text="Nowa Aktywność"
+                    android:textColor="#FFFFFF"
+                    android:textSize="40dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
 
             <LinearLayout
                 android:id="@+id/language_polish"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="-450dp"
+                android:layout_marginTop="50dp"
                 android:layout_marginEnd="20dp"
                 android:background="@drawable/settings_rounded15"
                 android:orientation="vertical"
@@ -49,8 +51,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="date"
-                    android:hint="Data"/>
+                    android:hint="Data"
+                    android:inputType="date" />
 
                 <EditText
                     android:id="@+id/editTextDate2"
@@ -65,32 +67,32 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:hint="Nazwa"/>
+                    android:hint="Nazwa"
+                    android:inputType="textPersonName" />
 
                 <EditText
                     android:id="@+id/editTextNumber"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="number"
-                    android:hint="Ilość osób"/>
+                    android:hint="Ilość osób"
+                    android:inputType="number" />
 
                 <EditText
                     android:id="@+id/editTextTextPersonName3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:hint="Kategoria"/>
+                    android:hint="Kategoria"
+                    android:inputType="textPersonName" />
 
                 <EditText
                     android:id="@+id/editTextTextPersonName4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:hint="Obiekt" />
+                    android:hint="Obiekt"
+                    android:inputType="textPersonName" />
 
                 <EditText
                     android:id="@+id/editTextTextPersonName8"
@@ -105,8 +107,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:hint="Zalozyciel" />
+                    android:hint="Zalozyciel"
+                    android:inputType="textPersonName" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -123,8 +125,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="35dp"
-                android:textColor="#D35A33"
                 android:text="Stwórz"
+                android:textColor="#D35A33"
                 android:textSize="16dp" />
         </LinearLayout>
 
